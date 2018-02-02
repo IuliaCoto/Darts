@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/darts"
+        android:scaleType="centerCrop"
+        android:src="@drawable/darts" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.darts.MainActivity">
+
+                <TextView
+                    android:id="@+id/player_one_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="18dp"
+                    android:text="@string/Player_Name_1"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorPlayer"/>
+
+                <TextView
+                    android:id="@+id/player_one_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorPlayer"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addTwentyForPlayerOne"
+                    android:text="@string/points20" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addTenForPlayerOne"
+                    android:text="@string/points10" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addFiveForPlayerOne"
+                    android:text="@string/points5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addOneForPlayerOne"
+                    android:text="@string/point1" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#A5D6A7" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.darts.MainActivity">
+
+
+                <TextView
+                    android:id="@+id/player_two_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="18dp"
+                    android:text="@string/Player_Name_2"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorPlayer"/>
+
+                <TextView
+                    android:id="@+id/player_two_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorPlayer"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addTwentyForPlayerTwo"
+                    android:text="@string/points20" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addTenForPlayerTwo"
+                    android:text="@string/points10" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addFiveForPlayerTwo"
+                    android:text="@string/points5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/colorPoint"
+                    android:fontFamily="serif"
+                    android:onClick="addOneForPlayerTwo"
+                    android:text="@string/point1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorReset"
+        android:fontFamily="serif"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+</RelativeLayout>
